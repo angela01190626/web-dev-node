@@ -23,5 +23,6 @@ require('./services/movies-service')(app);
 
 require('./services/tweeter-service')(app);
 
-app.listen(4000);
+let port = process.env.PORT || 4000;
+app.listen(port);
 
