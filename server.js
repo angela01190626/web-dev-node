@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+
+//read strings sent from server
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -22,6 +24,8 @@ app.get('/hello', (req, res) => {
 require('./services/movies-service')(app);
 
 require('./services/tweeter-service')(app);
+
+require('./services/profile-service')(app);
 
 let port = process.env.PORT || 4000;
 app.listen(port);

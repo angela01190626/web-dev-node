@@ -33,7 +33,6 @@ module.exports = (app) => {
     }
     app.put('/api/movies/:mid', saveMovie);
 
-
 };
 
 
