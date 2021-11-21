@@ -13,6 +13,7 @@
     },
     "logo-image": "/images/react-blue.png",
     "avatarImage": "/images/react-blue.png",
+    "liked": false,
     "stats": {
       "comments": 123,
       "retweets": 234,
@@ -34,6 +35,7 @@
     "logo-image": "/images/nodejs.png",
     "avatarImage": "/images/nodejs.png",
     "tweets": "120K",
+    "liked": false,
     "stats": {
       "comments": 123,
       "retweets": 234,
@@ -53,6 +55,7 @@
     "logo-image": "/images/js.png",
     "avatarImage": "/images/js.png",
     "tweets": "123K",
+    "liked": false,
     "stats": {
       "comments": 123,
       "retweets": 234,
@@ -71,6 +74,7 @@
     "logo-image": "/images/jquery.png",
     "avatarImage": "/images/jquery.png",
     "tweets": "122K",
+    "liked": false,
     "stats": {
       "comments": 123,
       "retweets": 234,
@@ -89,6 +93,7 @@
     "logo-image": "/images/nodejs.png",
     "avatarImage": "/images/nodejs.png",
     "tweets": "120K",
+    "liked": false,
     "stats": {
       "comments": 123,
       "retweets": 234,
