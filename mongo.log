@@ -1,0 +1,28 @@
+show dbs
+use webdev
+db.movies.insert({title: 'Aliens', rating: 4.5})
+db.movies.insert({title: 'Terminator', rating: 4.8})
+db.movies.insert({title: 'Avatar', rating: 4.7})
+db.movies.insert({title: 'Dune', rating: 4.9})
+show dbs
+db.movies.find()
+db.movies.find().pretty()
+db.movies.find({_id: ObjectId("619c504c23c56893121d3b33")})
+db.movies.find({title: 'Aliens'});
+db.movies.updateOne({title:'Avatar'},{$set:{rating:4.9}})
+
+db.tweets.insert({"topic": "Web Development",     "userName": "ReactJS",     "verified": false,     "handle": "ReactJS",     "time": "2h",     "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",     "attachments": {       "video": "unKvMC3Y1kI"     },     "logo-image": "/images/react-blue.png",     "avatarImage": "/images/react-blue.png",     "liked": false,     "stats": {       "comments": 123,       "retweets": 234,       "likes": 345     }   })
+db.tweets.insert({"topic": "Space",     "userName": "SpaceX",     "verified": false,     "handle": "spacex",     "title": "",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",     "attachments": {       "image": "/images/starship.jpeg"     },     "time": "last month",     "logo-image": "/images/nodejs.png",     "avatarImage": "/images/nodejs.png",     "tweets": "120K",     "liked": false,     "stats": {       "comments": 123,       "retweets": 234,       "likes": 345     }   })
+db.tweets.insert({"topic": "Space",     "userName": "Scott Manley",     "verified": true,     "handle": "DJSnM",     "published-date": "2020-12-10",     "time": "1 day",     "title": "JavaScript is programming language that can run on browsers as well as desktops",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",     "logo-image": "/images/js.png",     "avatarImage": "/images/js.png",     "tweets": "123K",     "liked": false,     "stats": {       "comments": 123,       "retweets": 234,       "likes": 345     }   })
+db.tweets.insert({"topic": "Web Development",     "userName": "jQuery",     "verified": false,     "handle": "jQuery",     "title": "jQuery",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",     "time": "last week",     "logo-image": "/images/jquery.png",     "avatarImage": "/images/jquery.png",     "tweets": "122K",     "liked": false,     "stats": {       "comments": 123,       "retweets": 234,       "likes": 345     }   })
+db.tweets.insert({"topic": "Web Development",     "userName": "NodeJS",     "verified": true,     "handle": "NodeJS",     "title": "",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",     "time": "last month",     "logo-image": "/images/nodejs.png",     "avatarImage": "/images/nodejs.png",     "tweets": "120K",     "liked": false,     "stats": {       "comments": 123,       "retweets": 234,       "likes": 345     }   })
+db.tweets.find().pretty()
+db.who.insert({"avatarIcon": "/images/java.png",     "userName": "Java", "handle": "Java"})
+db.who.insert({"avatarIcon": "/images/relativityspace.jpeg",     "userName": "Relativity Space",     "handle": "relativityspace"})
+db.who.insert({  "avatarIcon": "/images/virgingalactic.png",     "userName": "Virgin Galactic",     "handle": "virgingalactic"})
+db.who.insert({   "avatarIcon": "/images/nasa.png",     "userName": "NASA", "handle": "NASA"})
+db.who.insert({   "avatarIcon": "/images/tesla.png",     "userName": "Tesla", "handle": "Tesla" })
+db.who.find()
+db.profile.insert({   "name": "Yangjiawen Xu",   "handle": "Catherina",   "profilePicture": "/images/selfie.jpg",   "bannerPicture": "/images/nature1.jpeg",   "bio": "I am a MCSC student at the Boston campus.",   "website": "youtube.com/webdevtv",   "location": "Boston, MA",   "dateOfBirth": "1995-10-26",   "dateJoined": "September 2021",   "followingCount": "100",   "followersCount": "20" })
+db.profile.find().pretty()
+
