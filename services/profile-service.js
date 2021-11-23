@@ -3,7 +3,7 @@ let profile = require('../data/profile.json');
 module.exports = (app) => {
 
     const getCurrentProfile = (req, res) => {
-        res.json(profile);
+        res.json(profile[0]);
     }
 
     app.get('/api/profile', getCurrentProfile);
