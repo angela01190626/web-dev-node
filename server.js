@@ -7,8 +7,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/webdev');
+// mongoose.connect('mongodb://localhost:27017/webdev');
+const url = "mongodb+srv://Catherina:Aa123456@cluster0.gcj01.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+mongoose.connect(url, { useNewUrlParser: true })
+const db = mongoose.connection
+db.once('open', _ => {
+    console.log('Database connected:', url)
+})
 
+db.on('error', err => {
+    console.error('connection error:', err)
+})
 
 
 app.use(function(req, res, next) {
